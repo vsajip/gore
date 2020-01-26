@@ -1,4 +1,4 @@
-module github.com/motemen/gore
+module github.com/vsajip/gore
 
 go 1.13
 
