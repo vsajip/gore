@@ -68,9 +68,9 @@ var printerPkgs = []struct {
 	requires      []pathVersion
 	code          string
 }{
-	{path: "github.com/k0kubun/pp", version: "v3.0.1+incompatible", code: `pp.Println(x)`,
-		requires: []pathVersion{{"github.com/mattn/go-colorable", "v0.1.4"}}},
-	{path: "fmt", code: `fmt.Printf("%#v\n", x)`},
+//	{path: "github.com/k0kubun/pp", version: "v3.0.1+incompatible", code: `pp.Println(x)`,
+//		requires: []pathVersion{{"github.com/mattn/go-colorable", "v0.1.4"}}},
+	{path: "fmt", code: `fmt.Printf("%T(%#v)\n", x, x)`},
 }
 
 type pathVersion struct {
